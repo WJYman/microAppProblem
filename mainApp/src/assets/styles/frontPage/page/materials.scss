@@ -1,0 +1,134 @@
+@import "~@/assets/styles/frontPage/mixin.scss";
+.empty-prompt {
+  text-align: center;
+  margin: 25vh auto;
+}
+.row{
+  margin-right: -12px;
+  margin-left: -12px;
+}
+[class^='col'] {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.billmaterials-box {
+  background: #fff;
+  box-shadow: 0px 6px 12px 0px rgba(18, 38, 63, 0.03);
+  padding: 12px;
+  height: calc(100vh - 160px);
+}
+.userinfo-title {
+  margin-bottom: 20px;
+}
+.card-billmaterials,
+.card-billmaterials1 {
+  &.is-always-shadow {
+    box-shadow: none !important;
+  }
+  width: 408px;
+  .search {
+    width: 240px;
+  }
+  .btn-create {
+    width: 64px;
+  }
+  .select {
+    width: 80px;
+  }
+  ::v-deep .el-card__header {
+    padding: 0 !important;
+    padding-bottom: 12px !important;
+    border: none !important;
+  }
+  ::v-deep .el-card__body {
+    padding: 0 !important;
+  }
+  &-scroll {
+    overflow-y: auto;
+    @include scroll;
+    height: calc(100vh - 260px);
+  }
+}
+.card-billmaterials1 {
+  width: 502px;
+}
+.materialsDetails {
+  &.is-always-shadow {
+    box-shadow: none !important;
+  }
+  ::v-deep .el-card__header {
+    padding: 0 !important;
+    padding-bottom: 12px !important;
+    border: 0 !important;
+  }
+  ::v-deep .el-card__body {
+    padding: 0 !important;
+  }
+  // &-body{
+  //   height: calc(100vh - 270px);
+  // }
+  &-title {
+    font-weight: bold;
+    color: rgba(73, 79, 87, 1);
+  }
+  &-meta {
+    list-style: none;
+    margin: 0 -16px;
+    &-item {
+      display: inline-block;
+      padding: 0px 16px;
+      line-height: 1;
+    }
+    &-item + &-item {
+      border-left: 1px solid #ced4da;
+    }
+  }
+}
+/*  */
+.steps {
+  margin-bottom: 15px;
+  ::v-deep .el-step.is-horizontal .el-step__line {
+    background-color: #ced4da;
+    top: 16px;
+    height: 1px;
+    left: 61%;
+    right: -39%;
+  }
+  ::v-deep .el-step__title.is-success {
+    color: #556ee6;
+  }
+  ::v-deep .el-step__head.is-success {
+    color: #556ee6;
+    border-color: #556ee6;
+  }
+  ::v-deep .el-step__head.is-process {
+    color: #556ee6;
+    border-color: #556ee6;
+  }
+  ::v-deep .el-step__title{
+    font-size: 12px;
+  }
+  ::v-deep .el-step__title.is-process {
+    color: #556ee6;
+    font-weight: normal;
+    font-size: 12px;
+  }
+  ::v-deep .el-step__icon {
+    width: 32px;
+    height: 32px;
+  }
+  ::v-deep .is-finish {
+    .el-step__icon {
+      background: #556ee6;
+      color: #ffffff;
+    }
+  }
+}
+/*  */
+::v-deep .el-tree-node__content > .el-tree-node__expand-icon {
+  width: 16px;
+  height: 16px;
+  /*  */
+  padding: 8px !important;
+}
+

@@ -1,0 +1,1124 @@
+[
+  {
+    "pageType": "adminPage",
+    "path": "/Main",
+    "component": "Layout",
+    "meta": {
+      "title": "workspace",
+      "icon": "iconicon_main"
+    },
+    "children": [
+      {
+        "path": "Home",
+        "name": "Home",
+        "component": "adminPage/home/index",
+        "meta": {
+          "title": "home",
+          "icon": "iconicon_main",
+          "noCache": true,
+          "breadcrumb": false
+        }
+      }
+    ]
+  },
+  {
+    "meta": {
+      "title": "basic_settings",
+      "icon": "iconicon_basics",
+      "noCache": true
+    },
+    "pageType": "adminPage",
+    "path": "/BaseConfig",
+    "redirect": "noredirect",
+    "alwaysShow": true,
+    "children": [
+      {
+        "component": "adminPage/baseConfig/number/index",
+        "hidden": false,
+        "meta": {
+          "title": "number",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Number",
+        "path": "Number"
+      },
+      {
+        "component": "adminPage/baseConfig/rev/index",
+        "hidden": false,
+        "meta": {
+          "title": "version",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Rev",
+        "path": "Rev"
+      },
+      {
+        "component": "adminPage/baseConfig/listValue/index",
+        "hidden": false,
+        "meta": {
+          "title": "list_value",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "ListValue",
+        "path": "ListValue"
+      },
+      {
+        "component": "adminPage/baseConfig/verbList/index",
+        "hidden": false,
+        "meta": {
+          "title": "cascading_list",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "VerbList",
+        "path": "VerbList"
+      }
+    ],
+    "component": "Layout",
+    "hidden": false
+  },
+  {
+    "meta": {
+      "title": "attribute",
+      "icon": "iconicon_property",
+      "noCache": true
+    },
+    "pageType": "adminPage",
+    "path": "/AttributeDefinition",
+    "redirect": "noredirect",
+    "alwaysShow": true,
+    "children": [
+      {
+        "component": "adminPage/attributeDefinition/materials/index",
+        "hidden": false,
+        "meta": {
+          "title": "material_attributes",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Materials",
+        "path": "Materials"
+      },
+      {
+        "component": "adminPage/attributeDefinition/doc/index",
+        "hidden": false,
+        "meta": {
+          "title": "document_attributes",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Doc",
+        "path": "Doc"
+      },
+      {
+        "component": "adminPage/attributeDefinition/changeRequest/index",
+        "hidden": false,
+        "meta": {
+          "title": "change_request_properties",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "ChangeRequest",
+        "path": "ChangeRequest"
+      },
+      {
+        "component": "adminPage/attributeDefinition/changeOrder/index",
+        "hidden": false,
+        "meta": {
+          "title": "change_order_properties",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "ChangeOrder",
+        "path": "ChangeOrder"
+      },
+      {
+        "component": "adminPage/attributeDefinition/manufacturerChange/index",
+        "hidden": false,
+        "meta": {
+          "title": "manuChangeAttribute",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "ManufacturerChangeAttribute",
+        "path": "ManufacturerChangeAttribute"
+      },
+      {
+        "component": "adminPage/attributeDefinition/stateChange/index",
+        "hidden": false,
+        "meta": {
+          "title": "statusChangeAttributes",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "StateChangeAttribute",
+        "path": "StateChangeAttribute"
+      },
+      {
+        "component": "adminPage/attributeDefinition/applicationFlow/index",
+        "hidden": false,
+        "meta": {
+          "title": "appProcess",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "ApplicationFlowAttribute",
+        "path": "ApplicationFlowAttribute"
+      },
+      {
+        "component": "adminPage/attributeDefinition/problemReport/index",
+        "hidden": false,
+        "meta": {
+          "title": "problemReport",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "ProblemReportAttribute",
+        "path": "ProblemReportAttribute"
+      },
+      {
+        "component": "adminPage/attributeDefinition/qualityFlow/index",
+        "hidden": false,
+        "meta": {
+          "title": "qualityProcess",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "QualityFlowAttribute",
+        "path": "QualityFlowAttribute"
+      },
+      {
+        "component": "adminPage/attributeDefinition/pass/index",
+        "hidden": false,
+        "meta": {
+          "title": "gate_properties",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "ADPass",
+        "path": "Pass"
+      },
+      {
+        "component": "adminPage/attributeDefinition/activity/index",
+        "hidden": false,
+        "meta": {
+          "title": "activity_properties",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "ADActivity",
+        "path": "Activity"
+      },
+      {
+        "component": "adminPage/attributeDefinition/manufacturer/index",
+        "hidden": false,
+        "meta": {
+          "title": "manufacturer_properties",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Manufacturer",
+        "path": "Manufacturer"
+      },
+      {
+        "component": "adminPage/attributeDefinition/manufacturerPart/index",
+        "hidden": false,
+        "meta": {
+          "title": "manufacturer_part_attributes",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "ManufacturerPart",
+        "path": "ManufacturerPart"
+      },
+      {
+        "component": "adminPage/attributeDefinition/supplier/index",
+        "hidden": false,
+        "meta": {
+          "title": "supplier_properties",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "SupplierAttribute",
+        "path": "SupplierAttribute"
+      },
+      {
+        "component": "adminPage/attributeDefinition/location/index",
+        "hidden": false,
+        "meta": {
+          "title": "locationAttribute",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Location",
+        "path": "Location"
+      }
+    ],
+    "component": "Layout",
+    "hidden": false
+  },
+  {
+    "alwaysShow": true,
+    "meta": {
+      "title": "user_management",
+      "icon": "iconicon_user",
+      "noCache": true
+    },
+    "pageType": "adminPage",
+    "path": "/UserManage",
+    "redirect": "noredirect",
+    "children": [
+      {
+        "component": "adminPage/userManage/user/index",
+        "hidden": false,
+        "meta": {
+          "title": "user_management",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "User",
+        "path": "User"
+      },
+      {
+        "component": "adminPage/userManage/role/index",
+        "hidden": false,
+        "meta": {
+          "title": "role_management",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "RoleManage",
+        "path": "RoleManage"
+      },
+      {
+        "component": "adminPage/userManage/userSignature/index",
+        "hidden": false,
+        "meta": {
+          "title": "userSignature",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "UserSignature",
+        "path": "UserSignature"
+      },
+      {
+        "component": "adminPage/userManage/menuManagement/index",
+        "hidden": false,
+        "meta": {
+          "title": "menuManagement",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "MenuManagement",
+        "path": "MenuManagement"
+      }
+    ],
+    "component": "Layout",
+    "hidden": false
+  },
+  {
+    "alwaysShow": true,
+    "meta": {
+      "title": "permission_management",
+      "icon": "iconquanxian",
+      "noCache": true
+    },
+    "pageType": "adminPage",
+    "path": "/PermissionManage",
+    "redirect": "noredirect",
+    "children": [
+      {
+        "component": "adminPage/permissionManage/createObject/index",
+        "hidden": false,
+        "meta": {
+          "title": "create_objects",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "CreateObject",
+        "path": "CreateObject"
+      },
+      {
+        "component": "adminPage/permissionManage/read/index",
+        "hidden": false,
+        "meta": {
+          "title": "read",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Read",
+        "path": "Read"
+      },
+      {
+        "component": "adminPage/permissionManage/update/index",
+        "hidden": false,
+        "meta": {
+          "title": "modify",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Update",
+        "path": "Update"
+      },
+      {
+        "component": "adminPage/permissionManage/deleteObject/index",
+        "hidden": false,
+        "meta": {
+          "title": "deleting_objects",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "DeleteObject",
+        "path": "DeleteObject"
+      },
+      {
+        "component": "adminPage/permissionManage/addTab/index",
+        "hidden": false,
+        "meta": {
+          "title": "adding_tabs",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "AddTab",
+        "path": "AddTab"
+      },
+      {
+        "component": "adminPage/permissionManage/deleteFile/index",
+        "hidden": false,
+        "meta": {
+          "title": "deleting_attachments",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "DeleteFile",
+        "path": "DeleteFile"
+      },
+      {
+        "component": "adminPage/permissionManage/deleteMaterial/index",
+        "hidden": false,
+        "meta": {
+          "title": "deleting_substitute_material",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "DeleteMaterial",
+        "path": "DeleteMaterial"
+      },
+      {
+        "component": "adminPage/permissionManage/deleteRelation/index",
+        "hidden": false,
+        "meta": {
+          "title": "delete_relationships",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "DeleteRelation",
+        "path": "DeleteRelation"
+      },
+      {
+        "component": "adminPage/permissionManage/deleteImplementObject/index",
+        "hidden": false,
+        "meta": {
+          "title": "deleting_implementation_objects",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "DeleteImplementObject",
+        "path": "DeleteImplementObject"
+      },
+      {
+        "component": "adminPage/permissionManage/deleteBom/index",
+        "hidden": false,
+        "meta": {
+          "title": "delete_bom",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "DeleteBom",
+        "path": "DeleteBom"
+      },
+      {
+        "component": "adminPage/permissionManage/deleteManufactPart/index",
+        "hidden": false,
+        "meta": {
+          "title": "delete_manufacturer_parts",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "DeleteManufactPart",
+        "path": "DeleteManufactPart"
+      },
+      {
+        "component": "adminPage/permissionManage/deleteSupplier/index",
+        "hidden": false,
+        "meta": {
+          "title": "delete_supplier",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": " DeleteSupplier",
+        "path": "DeleteSupplier"
+      },
+      {
+        "component": "adminPage/permissionManage/deleteUser/index",
+        "hidden": false,
+        "meta": {
+          "title": "delete_contact_user",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": " DeleteUser",
+        "path": "DeleteUser"
+      },
+      {
+        "component": "adminPage/permissionManage/deleteManufact/index",
+        "hidden": false,
+        "meta": {
+          "title": "deleteManufact",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "DeleteManufact",
+        "path": "DeleteManufact"
+      },
+      {
+        "component": "adminPage/permissionManage/addApprover/index",
+        "hidden": false,
+        "meta": {
+          "title": "add_approver",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "AddApprover",
+        "path": "AddApprover"
+      },
+      {
+        "component": "adminPage/permissionManage/deleteApprover/index",
+        "hidden": false,
+        "meta": {
+          "title": "delete_approver",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "DeleteApprover",
+        "path": "DeleteApprover"
+      },
+      {
+        "component": "adminPage/permissionManage/checkOut/index",
+        "hidden": false,
+        "meta": {
+          "title": "checkout",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "CheckOut",
+        "path": "CheckOut"
+      },
+      {
+        "component": "adminPage/permissionManage/cancelCheckOut/index",
+        "hidden": false,
+        "meta": {
+          "title": "cancel_checkout",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "CancelCheckOut",
+        "path": "CancelCheckOut"
+      },
+      {
+        "component": "adminPage/permissionManage/checkIn/index",
+        "hidden": false,
+        "meta": {
+          "title": "sign_in",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "CheckIn",
+        "path": "CheckIn"
+      },
+      {
+        "component": "adminPage/permissionManage/preview/index",
+        "hidden": false,
+        "meta": {
+          "title": "preview",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Preview",
+        "path": "Preview"
+      },
+      {
+        "component": "adminPage/permissionManage/saveAs/index",
+        "hidden": false,
+        "meta": {
+          "title": "save_as",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "SaveAs",
+        "path": "SaveAs"
+      },
+      {
+        "component": "adminPage/permissionManage/print/index",
+        "hidden": false,
+        "meta": {
+          "title": "print",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Print",
+        "path": "Print"
+      },
+      {
+        "component": "adminPage/permissionManage/download/index",
+        "hidden": false,
+        "meta": {
+          "title": "download",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Download",
+        "path": "Download"
+      }
+    ],
+    "component": "Layout",
+    "hidden": false
+  },
+  {
+    "alwaysShow": true,
+    "meta": {
+      "title": "internationalization",
+      "icon": "iconguojihua",
+      "noCache": true
+    },
+    "pageType": "adminPage",
+    "path": "/Internationalization",
+    "redirect": "noredirect",
+    "children": [
+      {
+        "component": "adminPage/internationalization/language/index",
+        "hidden": false,
+        "meta": {
+          "title": "langsMaintenance",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Language",
+        "path": "Language"
+      },
+      {
+        "component": "adminPage/internationalization/field/index",
+        "hidden": false,
+        "meta": {
+          "title": "fieldMaintenance",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Field",
+        "path": "Field"
+      },
+      {
+        "component": "adminPage/internationalization/linguistic/index",
+        "hidden": false,
+        "meta": {
+          "title": "langMaintenance",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Linguistic",
+        "path": "Linguistic"
+      }
+    ],
+    "component": "Layout",
+    "hidden": false
+  },
+  {
+    "meta": {
+      "title": "system_related",
+      "icon": "iconicon_servers",
+      "noCache": true
+    },
+    "pageType": "adminPage",
+    "path": "/ServeConfig",
+    "redirect": "noredirect",
+    "children": [
+      {
+        "component": "adminPage/sysRelPage/syslog/index",
+        "hidden": false,
+        "meta": {
+          "title": "system_log",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Syslog",
+        "path": "Syslog"
+      },
+      {
+        "component": "adminPage/sysRelPage/serveConfig/index",
+        "hidden": false,
+        "meta": {
+          "title": "system_settings",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "SysConfig",
+        "path": "SysConfig"
+      },
+      {
+        "component": "adminPage/sysRelPage/fileFormat/index",
+        "hidden": false,
+        "meta": {
+          "title": "file_format",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "FileFormat",
+        "path": "FileFormat"
+      },
+      {
+        "component": "adminPage/sysRelPage/sysInfo/index",
+        "hidden": false,
+        "meta": {
+          "title": "personalized_settings",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "SysInfo",
+        "path": "SysInfo"
+      },
+      {
+        "component": "adminPage/sysRelPage/watermark/index",
+        "hidden": false,
+        "meta": {
+          "title": "watermarkSet",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "Watermark",
+        "path": "Watermark"
+      },{
+        "component": "adminPage/sysRelPage/checkImg/index",
+        "hidden": false,
+        "meta": {
+          "title": "signatureSetting",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "CheckImg",
+        "path": "CheckImg"
+      },
+      {
+        "component": "adminPage/sysRelPage/dataStorage/index",
+        "hidden": false,
+        "meta": {
+          "title": "timed_tasks",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "DataStorage",
+        "path": "DataStorage"
+      },
+      {
+        "component": "adminPage/sysRelPage/onlineUser/index",
+        "hidden": false,
+        "meta": {
+          "title": "online_monitoring",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "OnlineUser",
+        "path": "OnlineUser"
+      },
+      {
+        "component": "adminPage/sysRelPage/license/index",
+        "hidden": false,
+        "meta": {
+          "title": "authorization_management",
+          "icon": "",
+          "noCache": true
+        },
+        "pageType": "adminPage",
+        "name": "License",
+        "path": "License"
+      }
+    ],
+    "component": "Layout",
+    "hidden": false
+  },
+  {
+    "pageType": "frontPage",
+    "path": "/Front",
+    "component": "Layout2",
+    "hidden": true,
+    "meta": {
+      "title": "主页",
+      "icon": "iconicon_main",
+      "breadcrumb": false
+    },
+    "children": [
+      {
+        "path": "/Front",
+        "name": "Front",
+        "component": "frontPage/home/index",
+        "hidden": true,
+        "meta": {
+          "title": "home",
+          "icon": "iconicon_main",
+          "noCache": true,
+          "breadcrumb": false
+        }
+      }
+    ]
+  },
+  {
+    "pageType": "frontPage",
+    "path": "/Overview",
+    "component": "Layout2",
+    "hidden": false,
+    "meta": {
+      "title": "总览",
+      "icon": "iconicon_overview",
+      "breadcrumb": false
+    },
+    "children": [
+      {
+        "path": "/Overview",
+        "name": "Overview",
+        "component": "frontPage/overview/index",
+        "hidden": false,
+        "meta": {
+          "title": "overview",
+          "icon": "iconicon_overview",
+          "noCache": true,
+          "breadcrumb": false
+        }
+      }
+    ]
+  },
+  {
+    "pageType": "frontPage",
+    "path": "/Plan",
+    "component": "Layout2",
+    "hidden": true,
+    "meta": {
+      "title": "计划",
+      "icon": "icontask-plan",
+      "breadcrumb": false,
+      "activeMenu": "/PlanList"
+    },
+    "children": [
+      {
+        "path": "/Plan",
+        "name": "Plan",
+        "component": "frontPage/plan/index",
+        "hidden": true,
+        "meta": {
+          "title": "plan",
+          "icon": "icontask-plan",
+          "noCache": true,
+          "breadcrumb": false,
+          "activeMenu": "/PlanList"
+        }
+      }
+    ]
+  },
+  {
+    "pageType": "frontPage",
+    "path": "/ManufacturerFront",
+    "component": "Layout2",
+    "hidden": false,
+    "meta": {
+      "title": "制造商",
+      "icon": "iconzhizaoshang",
+      "breadcrumb": false
+    },
+    "children": [
+      {
+        "path": "/ManufacturerFront",
+        "name": "ManufacturerFront",
+        "component": "frontPage/manufacturer/index",
+        "hidden": false,
+        "meta": {
+          "title": "manufacturer",
+          "icon": "iconzhizaoshang",
+          "noCache": true,
+          "breadcrumb": false
+        }
+      }
+    ]
+  },
+  {
+    "pageType": "frontPage",
+    "path": "/ManufacturerPartFront",
+    "component": "Layout2",
+    "hidden": false,
+    "meta": {
+      "title": "制造商部件",
+      "icon": "iconbujian1",
+      "breadcrumb": false
+    },
+    "children": [
+      {
+        "path": "/ManufacturerPartFront",
+        "name": "ManufacturerPartFront",
+        "component": "frontPage/manufacturerPart/index",
+        "hidden": false,
+        "meta": {
+          "title": "manufacturer_parts",
+          "icon": "iconbujian1",
+          "noCache": true,
+          "breadcrumb": false
+        }
+      }
+    ]
+  },
+  {
+    "pageType": "frontPage",
+    "path": "/Supplier",
+    "component": "Layout2",
+    "hidden": false,
+    "meta": {
+      "title": "供应商",
+      "icon": "iconzhizaoshang",
+      "breadcrumb": false
+    },
+    "children": [
+      {
+        "path": "/Supplier",
+        "name": "Supplier",
+        "component": "frontPage/supplier/index",
+        "hidden": false,
+        "meta": {
+          "title": "supplier",
+          "icon": "icongongyingshang1",
+          "noCache": true,
+          "breadcrumb": false
+        }
+      }
+    ]
+  },
+  {
+    "pageType": "frontPage",
+    "path": "/Site",
+    "component": "Layout2",
+    "hidden": false,
+    "meta": {
+      "title": "地点",
+      "icon": "icondidian",
+      "breadcrumb": false
+    },
+    "children": [
+      {
+        "path": "/Site",
+        "name": "Site",
+        "component": "frontPage/site/index",
+        "hidden": false,
+        "meta": {
+          "title": "Location",
+          "icon": "icondidian",
+          "noCache": true,
+          "breadcrumb": false
+        }
+      }
+    ]
+  },
+  {
+    "pageType": "frontPage",
+    "path": "/SiteInfo",
+    "component": "Layout2",
+    "hidden": true,
+    "meta": {
+      "title": "地点",
+      "icon": "icondidian",
+      "breadcrumb": false,
+      "activeMenu": "/Site"
+    },
+    "children": [
+      {
+        "path": "/SiteInfo",
+        "name": "SiteInfo",
+        "component": "frontPage/site/siteInfo",
+        "hidden": true,
+        "meta": {
+          "title": "Location",
+          "icon": "icondidian",
+          "noCache": true,
+          "breadcrumb": false,
+          "activeMenu": "/Site"
+        }
+      }
+    ]
+  },
+  {
+    "pageType": "frontPage",
+    "path": "/Report",
+    "component": "Layout2",
+    "hidden": false,
+    "meta": {
+      "title": "",
+      "icon": "iconbaobiao",
+      "breadcrumb": false
+    },
+    "children": [
+      {
+        "pageType": "frontPage",
+        "path": "/Report1",
+        "name": "Report1",
+        "component": "frontPage/report/report1",
+        "hidden": false,
+        "meta": {
+          "title": "dataManageReport",
+          "noCache": true,
+          "breadcrumb": false
+        }
+      },
+      {
+        "pageType": "frontPage",
+        "path": "/Report2",
+        "name": "Report2",
+        "component": "frontPage/report/report2",
+        "hidden": false,
+        "meta": {
+          "title": "projectManageReport",
+          "noCache": true,
+          "breadcrumb": false
+        }
+      }
+    ]
+  },
+  {
+    "pageType": "frontPage",
+    "path": "/Setting",
+    "component": "Layout2",
+    "hidden": false,
+    "meta": {
+      "title": "设置",
+      "icon": "iconicon_setting",
+      "breadcrumb": false
+    },
+    "children": [
+      {
+        "pageType": "frontPage",
+        "path": "/Space",
+        "name": "Space",
+        "component": "frontPage/setting/index",
+        "hidden": false,
+        "meta": {
+          "title": "setting",
+          "noCache": true,
+          "breadcrumb": false
+        }
+      }
+    ]
+  },
+  {
+    "pageType": "frontPage",
+    "path": "/Info",
+    "component": "Layout2",
+    "hidden": true,
+    "meta": {
+      "title": "个人信息",
+      "icon": "iconicon_setting",
+      "breadcrumb": false
+    },
+    "children": [
+      {
+        "pageType": "frontPage",
+        "path": "/GeneralInfo",
+        "name": "GeneralInfo",
+        "component": "frontPage/generalInfo/index",
+        "hidden": false,
+        "meta": {
+          "title": "personalInformation",
+          "noCache": true,
+          "breadcrumb": false
+        }
+      }
+    ]
+  },
+  {
+    "pageType": "frontPage",
+    "path": "/Search",
+    "component": "Layout2",
+    "hidden": true,
+    "meta": {
+      "title": "搜索",
+      "icon": "",
+      "breadcrumb": false
+    },
+    "children": [
+      {
+        "pageType": "frontPage",
+        "path": "/Search",
+        "name": "Search",
+        "component": "frontPage/search/index",
+        "hidden": false,
+        "meta": {
+          "title": "search",
+          "noCache": true,
+          "breadcrumb": false
+        }
+      }
+    ]
+  }
+]

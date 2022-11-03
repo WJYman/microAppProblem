@@ -1,0 +1,202 @@
+.inst {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+::v-deep .el-step.is-horizontal {
+  width: 150px;
+}
+::v-deep .el-step.is-center .el-step__description {
+  padding-left: 0;
+  padding-right: 0;
+}
+.bor {
+  border-bottom: 0;
+  .ast {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border: 1px solid #eff2f7;
+    border-bottom: 0;
+  }
+}
+.el-radio-button {
+  border: none;
+  margin-bottom: 0;
+  .el-radio-button__inner {
+    .iconfont {
+      font-size: 12px !important;
+    }
+  }
+}
+.btnQuery {
+  float: left;
+}
+.btnGroups {
+  float: right;
+}
+.searchWidth {
+  width: 240px;
+}
+.titile {
+  margin-top: 12px;
+  font-size: 12px;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: rgba(73, 80, 87, 1);
+  margin-left: 5px;
+}
+.steps {
+  ::v-deep .el-step.is-horizontal .el-step__line {
+    background-color: #ced4da;
+    top: 16px;
+    height: 1px;
+  }
+  ::v-deep .el-step__head.is-process {
+    color: #556ee6;
+    border-color: #556ee6;
+  }
+  ::v-deep .el-step__title {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  ::v-deep .el-step__description {
+    margin-top: 1px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  ::v-deep .el-step__description.is-process {
+    margin-top: 1px;
+    color: #556ee6;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  ::v-deep .el-step__icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+  }
+  ::v-deep .is-process {
+    .el-step__icon {
+      background: #4caaf5;
+      color: #ffffff;
+    }
+  }
+  ::v-deep .is-process {
+    .el-step__icon {
+      background: #51c871;
+      color: #ffffff;
+    }
+  }
+
+  ::v-deep .el-step__description.is-process {
+    margin-top: 1px;
+    color: #51c871;
+    font-weight: bold;
+    font-size: 12px;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+    // margin-left: 20px;
+    // margin-right: 20px;
+  }
+  // 待进行
+  ::v-deep .is-wait {
+    .el-step__icon {
+      background: #556ee6;
+      color: #ffffff;
+    }
+  }
+  ::v-deep .el-step__description.is-wait {
+    margin-top: 1px;
+    color: #556ee6;
+    font-weight: bold;
+    color: #556ee6;
+    font-size: 12px;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+    // margin-left: 20px;
+    // margin-right: 20px;
+  }
+  // 进行中
+  ::v-deep .is-process {
+    .el-step__icon {
+      background: #1f923d;
+      color: #ffffff;
+    }
+  }
+  ::v-deep .el-step__description.is-process {
+    margin-top: 1px;
+    color: #1f923d;
+    font-weight: bold;
+    font-size: 12px;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+    // margin-left: 20px;
+    // margin-right: 20px;
+  }
+  // 已完成
+  ::v-deep .is-finish {
+    .el-step__icon {
+      background: #797a7c;
+      color: #ffffff;
+    }
+  }
+  ::v-deep .el-step__description.is-finish {
+    margin-top: 1px;
+    color: #797a7c;
+    font-weight: bold;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    // margin-left: 20px;
+    // margin-right: 20px;
+  }
+}
+
+.el-divider--horizontal {
+  margin: 12px 0;
+}
+.scroBar {
+  margin-top: 20px;
+  height: calc(100vh - 402px);
+  ::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #eff2f7;
+    border-radius: 20px;
+  }
+}
+
+.scroBarWorkflow {
+  height: calc(100vh - 110px);
+  overflow-y: auto;
+  ::-webkit-scrollbar-track-piece {
+    background: #d3dce6;
+  }
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #eff2f7;
+    border-radius: 20px;
+  }
+}
+.btn-group {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.dialogTitle {
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: rgba(73, 80, 87, 1);
+}

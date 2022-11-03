@@ -1,0 +1,9 @@
+::v-deep .el-form{
+    &-item{
+        &__label{
+            line-height: 22px;
+            margin-bottom: 4px;
+            font-size: 12px;
+        }
+    }
+}

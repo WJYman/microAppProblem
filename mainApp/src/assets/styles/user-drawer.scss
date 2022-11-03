@@ -1,0 +1,8 @@
+::v-deep .el-input.is-disabled .el-input__inner,
+::v-deep .el-textarea.is-disabled .el-input__inner {
+    background : none;
+    font-weight: bold;
+    color      : #495057;
+    border     : none;
+    padding    : 0;
+}

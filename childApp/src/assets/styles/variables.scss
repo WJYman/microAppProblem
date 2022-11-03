@@ -1,0 +1,49 @@
+// base color
+$blue:#324157;
+$light-blue:#50a5f1;
+$red:#f46a6a;
+$fontRed:#f46a6a;
+$pink: #f46a6a;
+$green: #34c38f;
+$tiffany: #4AB7BD;
+$yellow:#f1b44c;
+// 新增 颜色值
+$btnColor:#556EE6;
+$rimary:#556EE6;
+$background: #f8f8fb;
+$white:#fff;
+$grayFontColor:#74788D;
+$borderColor:rgba(17, 37, 63, 0.08);
+$fontColor: rgb(73, 79, 87);
+$operateBtnBack:#74788D;
+
+/* 改变element-ui主题色变量 */
+// $--color-primary: $btnColor;
+// $--font-path: '~element-ui/lib/theme-chalk/fonts';
+// @import "~element-ui/packages/theme-chalk/src/index";
+// sidebar
+$menuText:#A5AFCF;
+$menuActiveText:#FFFFFF;
+$subMenuActiveText:#FFFFFF; // https://github.com/ElemeFE/element/issues/12951
+
+$menuBg:#2A3042;
+$menuHover:#2A3042;
+
+$subMenuBg:#2A3042;
+$subMenuHover:#2A3042;
+$menuItemFontColor:#79829C;
+
+$sideBarWidth: 200px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}

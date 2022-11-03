@@ -1,0 +1,496 @@
+#app {
+
+  .main-container {
+    min-height: 100%;
+    transition: margin-left 0.2s;
+    margin-left: $sideBarWidth;
+    position: relative;
+    background-color: #F8F8FB;
+  }
+
+  .sidebar-container {
+    transition: width 0.2s;
+    width: $sideBarWidth;
+    background-color: $menuBg;
+    height: 100%;
+    position: fixed;
+    font-size: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+   
+    // reset element-ui css
+    .horizontal-collapse-transition {
+      transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+    }
+
+    .scrollbar-wrapper {
+      overflow-x: hidden !important;
+    }
+
+    .el-scrollbar__bar.is-vertical {
+      width: 4px;
+      right: 0;
+    }
+
+    .el-scrollbar {
+      height: 100%;
+    }
+
+    &.has-logo {
+      .el-scrollbar {
+        height: calc(100% - 70px);
+      }
+    }
+
+    .is-horizontal {
+      display: none;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .svg-icon {
+      margin-right: 16px;
+    }
+
+    .el-menu {
+      border: none;
+      .el-menu-item {
+        min-width: 0px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+      }
+      ::v-deep .menu-wrapper {
+        .nest-menu {
+          .el-menu-item {
+            padding: 0 10px 0 24px !important;
+            font-size: 12px;
+            height: 36px;
+            line-height: 36px;
+            color:$menuItemFontColor !important;
+            &.is-active {
+              color:$white !important;
+            }
+          }
+        }
+      }
+    }
+
+    .el-submenu__title i {
+      color:#A6B0CF !important;
+    }
+    .is-active>span,
+    .is-active .el-submenu__title i {
+      color:#fff;
+    }
+
+    // menu hover
+    .submenu-title-noDropdown,
+      ::v-deep .el-submenu__title {
+      padding: 0 24px !important;
+      font-size: 12px;
+      color: #A6B0CF !important;
+      height: 45px;
+      line-height: 45px;
+      &:hover {
+        background-color: $menuHover !important;
+      }
+      ::v-deep .el-submenu__title i {
+        color: #A6B0CF !important;
+      }
+      .menu-icon {
+        font-size: 12px !important;
+        color: #A6B0CF !important;
+        margin-right: 10px !important;
+      }
+    }
+
+    .is-active .menu-icon {
+      color: #fff !important;
+    }
+    .is-active>.el-submenu__title {
+      color: $subMenuActiveText !important;
+    }
+
+    & .nest-menu .el-submenu>.el-submenu__title,
+    & .el-submenu .el-menu-item {
+      // min-width: $sideBarWidth !important;
+      background-color: #2A3042;
+      &:hover {
+        // background-color: #2e3548 !important;
+      }
+    }
+    .el-scrollbar__view {
+      padding: 10px 0 30px 0;
+    }
+  }
+
+  .sidebar-frontcontainer {
+    transition: width 0.2s;
+    width: 184px !important;
+    height: calc(100vh - 55px);
+    position: fixed;
+    font-size: 0;
+    top: 55px;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+    overflow: hidden;
+   
+
+    .container{
+      margin-right: 48px;
+    }
+    // reset element-ui css
+    .horizontal-collapse-transition {
+      transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+    }
+
+    .scrollbar-wrapper {
+      overflow-x: hidden !important;
+    }
+
+    .el-scrollbar__bar.is-vertical {
+      width: 4px;
+      right: 0;
+    }
+
+    .el-scrollbar {
+      height: 100%;
+    }
+
+    &.has-logo {
+      .el-scrollbar {
+        height: calc(100% - 70px);
+      }
+    }
+    .is-horizontal {
+      display: none;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .svg-icon {
+      margin-right: 16px;
+    }
+
+    .el-menu {
+      border: none;
+      ::v-deep .menu-wrapper {
+        .nest-menu {
+          .el-menu-item {
+            padding: 0 10px 0 24px !important;
+            font-size: 12px;
+            height: 36px;
+            line-height: 36px;
+            color:$menuItemFontColor !important;
+            &.is-active {
+              color:$white !important;
+            }
+          }
+        }
+      }
+    }
+    .is-active>span,
+    .is-active .el-submenu__title i {
+      color:#fff;
+    }
+
+    // menu hover
+    .submenu-title-noDropdown,
+      ::v-deep .el-submenu__title {
+      padding: 0 24px !important;
+      font-size: 12px;
+      color: #A6B0CF !important;
+      height: 45px;
+      line-height: 45px;
+      &:hover {
+        background-color: $menuHover !important;
+      }
+      ::v-deep .el-submenu__title i {
+        color: #A6B0CF !important;
+      }
+      .menu-icon {
+        font-size: 12px !important;
+        color: #A6B0CF !important;
+        margin-right: 10px !important;
+      }
+    }
+
+    .is-active .menu-icon {
+      color: #fff !important;
+    }
+    .is-active>.el-submenu__title {
+      color: $subMenuActiveText !important;
+    }
+
+    & .nest-menu .el-submenu>.el-submenu__title,
+    & .el-submenu .el-menu-item {
+      min-width: 184px !important;
+      background-color: #556ee6 !important;
+      height: 36px !important;
+      line-height:36px !important;
+      &:hover {
+        background-color: #6c8adc !important;
+      }
+    }
+    .el-scrollbar__view {
+      padding: 0px 0 48px 0;
+    }
+  }
+
+  .hideSidebar .el-menu--collapse .menu-icon {
+    font-size: 16px !important;
+    color: #A6B0CF !important;
+    margin-right: 0 !important;
+  }
+
+  .hideSidebar .el-menu--collapse .is-active .menu-icon {
+    color: #fff !important;
+  }
+
+  .hideSidebar {
+    .sidebar-container {
+      width: 70px;
+    }
+    .main-container {
+      margin-left: 70px;
+    }
+
+    .submenu-title-noDropdown {
+      padding: 0 !important;
+      position: relative;
+
+      .el-tooltip {
+        padding: 0 !important;
+        text-align: center;
+        .svg-icon {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .el-submenu {
+      overflow: hidden;
+      &>.el-submenu__title {
+        padding: 0 !important;
+        text-align: center;
+        .svg-icon {
+          margin-left: 20px;
+        }
+
+        .el-submenu__icon-arrow {
+          display: none;
+        }
+      }
+      &:hover {
+        &>.el-submenu__title {
+          background: #2e3548 !important;
+        }
+      }
+      .el-submenu {
+        .el-submenu__title {
+          text-align: left;
+          padding: 0 16px !important;
+        }
+      }
+    }
+
+    .el-menu-item:hover {
+      background: #2e3548 !important;
+    }
+
+    .el-menu--collapse {
+      .menu-icon{
+        margin-right: 0;
+        font-size: 18px;
+      }
+      .el-submenu {
+        &>.el-submenu__title {
+          &>span {
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            visibility: hidden;
+            display: inline-block;
+          }
+        }
+        .el-submenu {
+          &>.el-submenu__title {
+            &>span {
+              height: auto;
+              width: auto;
+              overflow: visible;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hideFrontSidebar {
+    .sidebar-frontcontainer {
+      width: 48px !important;
+    }
+
+    .container{
+      margin-left: 48px !important;
+    }
+
+    .container.front{
+      margin-left: 0px !important;
+    }
+
+
+    .submenu-title-noDropdown {
+      padding: 0 !important;
+      position: relative;
+
+      .el-tooltip {
+        padding: 0 !important;
+        text-align: center;
+        .svg-icon {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .el-submenu {
+      &>.el-submenu__title {
+        padding: 0 !important;
+        text-align: center;
+        .svg-icon {
+          margin-left: 20px;
+        }
+
+        .el-submenu__icon-arrow {
+          display: none;
+        }
+      }
+      
+    }
+
+    .el-submenu:hover {
+      &>.el-submenu__title {
+        background: #6c8adc !important;
+      }
+    }
+    .el-menu-item:hover {
+      background: #6c8adc !important;
+    }
+
+    .el-menu--collapse {
+      .menu-icon{
+        margin-right: 0;
+        font-size: 12px;
+      }
+      .el-submenu {
+        &>.el-submenu__title {
+          &>span {
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            visibility: hidden;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+  .el-menu--collapse .el-menu .el-submenu {
+    min-width: 0 !important;
+  }
+
+  // mobile responsive
+  .mobile {
+    .main-container {
+      margin-left: 0;
+    }
+
+    .sidebar-container {
+      transition: transform .28s;
+      width: $sideBarWidth !important;
+    }
+
+    &.hideSidebar {
+      .sidebar-container {
+        pointer-events: none;
+        transition-duration: 0.3s;
+        transform: translate3d(-$sideBarWidth, 0, 0);
+      }
+    }
+  }
+
+  .withoutAnimation {
+
+    .main-container,
+    .sidebar-container {
+      transition: none;
+    }
+  }
+  .hideSidebar .sidebar-container ::v-deep .el-submenu__title {
+    height: 48px;
+    line-height: 48px;
+  }
+}
+
+// when menu collapsed
+.el-menu--vertical {
+  &>.el-menu {
+    .svg-icon {
+      margin-right: 16px;
+    }
+  }
+
+  .nest-menu .el-submenu>.el-submenu__title,
+  .el-menu-item {
+    &:hover {
+      // you can use $subMenuHover
+      background-color: $menuHover !important;
+    }
+  }
+
+  // the scroll bar appears when the subMenu is too long
+  >.el-menu--popup {
+    max-height: 100vh;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar-track-piece {
+      background: #d3dce6;
+    }
+
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #99a9bf;
+      border-radius: 20px;
+    }
+  }  
+}
+
+.nest-menu .el-menu-item {
+  padding: 0 16px !important;
+  font-size: 12px;
+  color: #79829C !important;
+  height: 48px;
+  line-height: 47px;
+}
+.nest-menu .el-menu-item.is-active {
+  color: #ffffff !important;
+}
+.nest-menu .el-menu-item:hover {
+  color: #ffffff !important;
+  background: #2e3548 !important;
+}
